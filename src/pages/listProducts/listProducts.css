@@ -130,6 +130,26 @@ h4 {
     margin-bottom: 10px;
 }
 
+.plus {
+    font-size: 24px;
+}
+
+.button_ghost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border: 2px solid rgb(221, 39, 221);
+    color: rgb(221, 39, 221);
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 .product h2 {
     margin-top: 0;
     font-size: 1.5rem;
