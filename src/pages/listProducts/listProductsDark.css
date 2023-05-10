@@ -26,7 +26,33 @@ body {
 }
 
 .container_menu_footer {
-    margin-top: 62vh;
+    position: fixed;
+    bottom: 20px;
+}
+
+.container_option_exit {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.container_option_exit:hover {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container_option_exit:hover h4 {
+    color: red;
+}
+
+.container_option_exit:hover svg {
+    fill: red;
 }
 
 .title_header {
