@@ -96,7 +96,6 @@ tr:nth-child(even) {
     flex-direction: row;
     gap: 10px;
     align-items: center;
-    color: white;
     cursor: pointer;
     padding-left: 15px;
     background-color: white;
