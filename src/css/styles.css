@@ -1,0 +1,630 @@
+.style_background {
+    width: 100%;
+    height: 99%;
+    position: absolute;
+}
+
+.style_login_content {
+    position: fixed;
+    right: 10%;
+    top: 20%;
+    height: fit-content;
+    width: 500px;
+    background-color: white;
+    box-shadow: 0px 3px 10px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 40px 60px 40px 60px;
+    opacity: 78%;
+}
+
+.b_destaque {
+    color: rgb(221, 39, 221);
+}
+
+
+.style_flex_container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+h3 {
+    color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-input {
+    position: relative;
+}
+
+.inputs_container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.single-input label {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+.input {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+    transition: 0.5s ease-in-out;
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.input:focus {
+    border-bottom: 1px solid rgb(221, 39, 221);
+}
+
+.input:focus~label,
+.input:valid~label {
+    transform: translateY(-24px);
+    font-size: 16px;
+    color: rgb(221, 39, 221);
+}
+
+.container_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.primary_button {
+    background-color: rgb(221, 39, 221);
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.3s ease;
+    border: 1px solid black
+}
+
+.secundary_button {
+    background-color: #d7d7d7;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    transition: background-color 0.3s ease;
+    border: 1px solid black
+}
+
+.primary_button:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.secundary_button:hover {
+    background-color: aqua;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+
+.sesion_header {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.container_menu {
+    height: 100vh;
+    width: 250px;
+    background-color: rgb(221, 39, 221);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_menu_body {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container_menu_footer {
+    position: fixed;
+    bottom: 20px;
+}
+
+.container_menu_footer:hover h4 {
+    color: rgb(221, 39, 221);
+}
+
+.container_menu_footer {
+    position: fixed;
+    bottom: 20px;
+}
+
+.container_option_exit {
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.container_option_exit:hover {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container_option_exit:hover h4 {
+    color: red;
+}
+
+.container_option_exit:hover svg {
+    fill: red;
+}
+
+
+.title_header {
+    color: white;
+    margin-top: 20px;
+}
+
+.container_option {
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.container_option_selected {
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container_option_selected h4 {
+    color: rgb(221, 39, 221);
+}
+
+.container_option_selected svg {
+    fill: rgb(221, 39, 221);
+}
+
+.img_option {
+    height: 25px;
+    width: 25px;
+    fill: white;
+}
+
+.description_option {
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container_page_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_page {
+    width: 100%;
+    padding: 50px 70px 0px 20px;
+}
+
+.container_products {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+h4 {
+    font-weight: 200;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.product {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
+}
+
+.product:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.plus {
+    font-size: 24px;
+}
+
+.button_ghost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border: 2px solid rgb(221, 39, 221);
+    color: rgb(221, 39, 221);
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.product h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.product p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.product .price {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f44336;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    margin-top: 40px;
+    padding: 0;
+    justify-content: center;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    color: black;
+    background-color: lightgray;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.pagination .active a {
+    background-color: gray;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 10px;
+    width: 0px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+}
+
+td {
+    font-size: 18px;
+}
+
+h4 {
+    font-weight: 200;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.icon_table_edit {
+    height: 24px;
+    width: 24px;
+    fill: aquamarine;
+    cursor: pointer;
+}
+
+.icon_table_delete {
+    height: 24px;
+    width: 24px;
+    fill: red;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sesion_header {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.container_menu {
+    height: 100vh;
+    width: 250px;
+    background-color: rgb(221, 39, 221);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_menu_body {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container_menu_footer {
+    margin-top: 62vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+.title_header {
+    color: white;
+    margin-top: 20px;
+}
+
+.container_option_selected {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container_option_selected h4 {
+    color: rgb(221, 39, 221);
+}
+
+.container_option_selected svg {
+    fill: rgb(221, 39, 221);
+}
+
+.container_option {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.img_option {
+    height: 25px;
+    width: 25px;
+    fill: white;
+}
+
+.container_page_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_page {
+    width: 100%;
+    padding: 50px 70px 0px 20px;
+}
+
+.plus {
+    font-size: 24px;
+}
+
+.button_ghost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border: 2px solid rgb(221, 39, 221);
+    color: rgb(221, 39, 221);
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.container_table {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.button_ghost:hover {
+    background-color: #f9f9f9;
+}
+
+.description_option {
+    color: white;
+}
+
+body {
+    margin: 0px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    color: black;
+    background-color: lightgray;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.pagination .active a {
+    background-color: gray;
+    color: white;
+}
+
+.single-input {
+    position: relative;
+}
+
+.single-input label {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: rgb(150, 150, 150);
+    cursor: text;
+    transition: 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+.input {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+    transition: 0.5s ease-in-out;
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.input:focus {
+    border-bottom: 1px solid rgb(221, 39, 221);
+}
+
+.input:focus~label,
+.input:valid~label {
+    transform: translateY(-24px);
+    font-size: 16px;
+    color: rgb(221, 39, 221);
+}
+
+.container_search {
+    width: 300px;
+}
+
+.error_text {
+    font-size: 14px;
+    color: red;
+    font-weight: 500;
+}

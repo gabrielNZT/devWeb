@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title> Login </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300%7CSonsie+One" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <img class="style_background" src="/assets/background.jpg" alt="img-background" />
+    <div class="style_login_content">
+        <form method="POST" action="/login/submit">
+            <div class="style_flex_container">
+                <div class="container_footer">
+                    <h1> Login </h1>
+                    <h4> Bem vindo ao <b class="b_destaque">BM</b> </h4>
+                </div>
+                <div class="inputs_container">
+                    <div class="single-input">
+                        <input type="text" class="input" id="name" name="name" required>
+                        <label for="nome">Usuário</label>
+                    </div>
+                    <div class="single-input">
+                        <input type="password" class="input" id="password" name="password" required>
+                        <label for="password">Senha</label>
+                    </div>
+                    <% if(!!error){ %>
+                        <span class="error_text">
+                            <%= error %>
+                        </span>
+                        <% } %>
+
+                </div>
+                <span class="container_buttons">
+                    <button class="primary_button" type="submit"> Entrar </button>
+                    ou
+                    <button class="secundary_button"> Cadastrar </button>
+                </span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
