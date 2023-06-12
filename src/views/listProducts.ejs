@@ -40,6 +40,12 @@
                                 <h4 class="description_option"> Usuários </h4>
                             </a>
                             <% } %>
+                            <% if(darkMode) { %>
+                                <button id="darkModeButton"> Remover darkMode </button>
+                                <% } %>
+                                    <% if(!darkMode) { %>
+                                        <button id="darkModeButton"> Habilitar darkMode </button>
+                                        <% } %>
             </div>
             <div class="container_menu_footer">
                 <a href="/logout" class="container_option_exit">
@@ -134,6 +140,7 @@
             </div>
         </div>
     </div>
+    <script src="/products/script"></script>
 </body>
 
 </html>

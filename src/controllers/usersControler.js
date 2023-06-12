@@ -5,7 +5,7 @@ const renderPage = (req, res) => {
         return res.redirect('/login');
     }
     console.log(page)
-    return res.render('listUser', { ...userData, page });
+    res.render('listUser', { ...userData, page, darkMode: req.appState.getDarkMode() });
 }
 
 const getScript = (req, res) => {
@@ -13,4 +13,9 @@ const getScript = (req, res) => {
     return res.sendFile(filePath)
 }
 
-module.exports = { renderPage, getScript };
+const changeDarkMode = (req, res) => {
+    req.appState.changeDarkMode();
+    return res.redirect('/users');
+}
+
+module.exports = { renderPage, getScript, changeDarkMode };

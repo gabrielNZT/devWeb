@@ -28,3 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+const darkModeButton = document.getElementById('darkModeButton');
+
+darkModeButton.addEventListener('click', () => {
+    fetch(`/users/dark`).then(() => {
+        location.reload();
+    });
+});
+
