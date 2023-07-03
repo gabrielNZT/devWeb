@@ -1,6 +1,7 @@
 class AppState {
     constructor() {
         this.darkMode = false;
+        this.listUsers = [];
         this.userTable = {
             search: '',
             page: 1,
@@ -8,6 +9,7 @@ class AppState {
             filteredElements: []
         };
         this.userData = {
+            token: '',
             role: '',
             name: '',
             company: ''
@@ -22,6 +24,10 @@ class AppState {
         };
     }
 
+    getListUsers() {
+        return this.listUsers;
+    }
+
     getUserData() {
         return this.userData;
     }
@@ -32,6 +38,10 @@ class AppState {
 
     setUserData(userData) {
         this.userData = userData;
+    }
+
+    setListUsers(listUsers) {
+        this.listUsers = listUsers;
     }
 
     changeDarkMode() {

@@ -12,10 +12,10 @@
 <body>
     <img class="style_background" src="/assets/background.jpg" alt="img-background" />
     <div class="style_login_content">
-        <form method="POST" action="/login/submit">
+        <form method="POST" action="/register/submit">
             <div class="style_flex_container">
                 <div class="container_footer">
-                    <h1> Login </h1>
+                    <h1> Cadastro </h1>
                     <h4> Bem vindo ao <b class="b_destaque">BM</b> </h4>
                 </div>
                 <div class="inputs_container">
@@ -24,8 +24,16 @@
                         <label for="nome">Usuário</label>
                     </div>
                     <div class="single-input">
+                        <input type="email" class="input" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="single-input">
                         <input type="password" class="input" id="password" name="password" required>
                         <label for="password">Senha</label>
+                    </div>
+                    <div class="single-input">
+                        <input type="text" class="input" id="company" name="company" required>
+                        <label for="company">Nome da empresa</label>
                     </div>
                     <% if(!!error){ %>
                         <span class="error_text">
@@ -35,9 +43,9 @@
 
                 </div>
                 <span class="container_buttons">
-                    <button class="primary_button" type="submit"> Entrar </button>
+                    <button class="primary_button" type="submit"> Cadastrar </button>
                     ou
-                    <a href="/register" class="secundary_button"> Cadastrar </a>
+                    <a href="/login" class="secundary_button"> Voltar ao Login </a>
                 </span>
             </div>
         </form>

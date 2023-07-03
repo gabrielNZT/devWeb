@@ -868,3 +868,22 @@ h4 {
     background-color: gray;
     color: white;
 }
+
+.container_register_user {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.seta_icon {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.back_arrow {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}

@@ -7,6 +7,8 @@ const loginRouter = require('./routes/login.routes');
 const usersRouter = require('./routes/users.routes');
 const logoutRouter = require('./routes/logout.routes');
 const productsRouter = require('./routes/products.routes');
+const registerRouter = require('./routes/register.routes');
+const registerUserRouter = require('./routes/registerUser.routes');
 
 require('dotenv').config();
 
@@ -25,7 +27,9 @@ app.use('/assets', assetsRouter);
 app.use('/login', loginRouter);
 app.use('/users', usersRouter);
 app.use('/logout', logoutRouter);
-app.use('/products', productsRouter)
+app.use('/products', productsRouter);
+app.use('/register', registerRouter);
+app.use('/registerUser', registerUserRouter);
 
 app.listen(port, () => {
     console.log('Servidor rodando na porta ' + port);

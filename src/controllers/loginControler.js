@@ -1,21 +1,21 @@
 const loginService = require('../services/loginServices');
 const messages = require('../i118/index');
 const constants = require('../constants/index');
+const apiService = require('../api/service');
 
 const renderPage = (req, res) => {
-    console.log(req.appState);
     return res.render('login', { error: req.query.error || '' });
 }
 
-const submit = (req, res) => {
+const submit = async (req, res) => {
     try {
         const nome = req.body.name;
         const password = req.body.password;
-        const data = loginService.validadeUser(req.body);
+        const response = await apiService.login(req.body);
 
-        req.appState.setUserData(data);
+        req.appState.setUserData(response);
 
-        switch (data.role) {
+        switch (response.role) {
             case constants.ADMIN:
                 return res.redirect('/users');
             case constants.RH:
