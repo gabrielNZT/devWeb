@@ -9,6 +9,7 @@ const logoutRouter = require('./routes/logout.routes');
 const productsRouter = require('./routes/products.routes');
 const registerRouter = require('./routes/register.routes');
 const registerUserRouter = require('./routes/registerUser.routes');
+const editUserRouter = require('./routes/editUser.routes');
 
 require('dotenv').config();
 
@@ -30,6 +31,7 @@ app.use('/logout', logoutRouter);
 app.use('/products', productsRouter);
 app.use('/register', registerRouter);
 app.use('/registerUser', registerUserRouter);
+app.use('/editUser', editUserRouter);
 
 app.listen(port, () => {
     console.log('Servidor rodando na porta ' + port);

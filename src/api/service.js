@@ -84,4 +84,52 @@ async function deleteUser(user) {
     return data;
 }
 
-module.exports = { login, register, getUsersByCompany, deleteUser }
+async function getUser(user) {
+    if (!user) {
+        throw new Error('Informe o nome do usuário');
+    }
+
+    const params = {
+        method: "GET",
+        headers: {
+            'Content-Type': 'application/json',
+            'user': user
+        }
+    }
+
+    const response = await fetch(BASE_URL + '/owner/user', params);
+    const data = await response.json();
+
+    if (data.error) {
+        throw new Error('Usuário não encontrado');
+    }
+
+    return data;
+}
+
+async function updateUser(userToSave, updatedUser) {
+    let body = updatedUser;
+    if (!updatedUser.password) {
+        const { password, ...rest } = updatedUser;
+        body = rest;
+    }
+    const params = {
+        method: "PUT",
+        headers: {
+            'Content-Type': 'application/json',
+            'user': userToSave
+        },
+        body: JSON.stringify(body)
+    }
+
+    const response = await fetch(BASE_URL + '/owner/user', params);
+    const data = await response.json();
+    console.log(data)
+    if (data.error) {
+        throw new Error('Falha ao salvar!');
+    }
+
+    return data;
+}
+
+module.exports = { login, register, getUsersByCompany, deleteUser, getUser, updateUser }
